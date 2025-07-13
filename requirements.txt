@@ -1,0 +1,7 @@
+dagster
+dagster-postgres
+dbt-postgres
+fastapi
+uvicorn[standard]
+ultralytics        # YOLOv8
+psycopg2-binary

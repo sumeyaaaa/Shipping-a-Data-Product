@@ -1,0 +1,12 @@
+telegram_profile:                     # this name matches profile: in dbt_project.yml
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost                # connect to your local Postgres
+      port: 5432
+      user: "{{ env_var('PGUSER') }}"
+      password: "{{ env_var('PGPASSWORD') }}"
+      dbname: "{{ env_var('PGDATABASE') }}"
+      schema: raw                    # load staging models into raw schema
+      threads: 4

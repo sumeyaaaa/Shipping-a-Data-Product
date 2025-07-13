@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: messages
+      - name: images
+
+models:
+  - name: stg_messages
+    tests:
+      - unique:
+          column_name: message_id
+      - not_null:
+          column_name: message_id
+  - name: stg_images
+    tests:
+      - unique:
+          column_name: image_id
+      - not_null:
+          column_name: image_id
+  - name: fct_messages
+    description: "Fact table of messages by day"

@@ -1,0 +1,1002 @@
+[0m12:26:44.716514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFFB8178C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFFCA0BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFFCA0B890>]}
+
+
+============================== 12:26:44.728190 | 42bb3834-504e-4ef7-96f8-cd333b25703e ==============================
+[0m12:26:44.728190 [info ] [MainThread]: Running with dbt=1.10.4
+[0m12:26:44.729149 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\ABC\\Desktop\\10Acadamy\\week_7\\Shipping-a-Data-Product\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\ABC\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:26:44.791574 [info ] [MainThread]: dbt version: 1.10.4
+[0m12:26:44.792354 [info ] [MainThread]: python version: 3.13.2
+[0m12:26:44.792993 [info ] [MainThread]: python path: C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\.venv\Scripts\python.exe
+[0m12:26:44.793674 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:26:44.794381 [info ] [MainThread]: Using profiles dir at C:\Users\ABC\.dbt
+[0m12:26:44.794968 [info ] [MainThread]: Using profiles.yml file at C:\Users\ABC\.dbt\profiles.yml
+[0m12:26:44.795540 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\dbt_project.yml
+[0m12:26:44.910264 [info ] [MainThread]: Configuration:
+[0m12:26:44.911241 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m12:26:44.911887 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:26:44.912557 [info ] [MainThread]: Required dependencies:
+[0m12:26:44.913164 [debug] [MainThread]: Executing "git --help"
+[0m12:26:44.961321 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:26:44.962366 [debug] [MainThread]: STDERR: "b''"
+[0m12:26:44.962976 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:26:44.963698 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:26:44.964280 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:26:44.964908 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\ABC\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:26:44.966443 [debug] [MainThread]: Command `dbt debug` failed at 12:26:44.966300 after 0.44 seconds
+[0m12:26:44.966858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFFBD88FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFFDBA2690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFFC8B58C0>]}
+[0m12:26:44.967279 [debug] [MainThread]: Flushing usage events
+[0m12:26:46.624246 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:29:26.591989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269F2F878C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269F4173ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269F4173890>]}
+
+
+============================== 12:29:26.596949 | 811c77ac-5b18-4e74-a7b0-2bc89d4a3b1a ==============================
+[0m12:29:26.596949 [info ] [MainThread]: Running with dbt=1.10.4
+[0m12:29:26.597772 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ABC\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\ABC\\Desktop\\10Acadamy\\week_7\\Shipping-a-Data-Product\\dbt_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:29:26.626443 [info ] [MainThread]: dbt version: 1.10.4
+[0m12:29:26.627090 [info ] [MainThread]: python version: 3.13.2
+[0m12:29:26.627600 [info ] [MainThread]: python path: C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\.venv\Scripts\python.exe
+[0m12:29:26.628162 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:29:26.628785 [info ] [MainThread]: Using profiles dir at C:\Users\ABC\.dbt
+[0m12:29:26.629312 [info ] [MainThread]: Using profiles.yml file at C:\Users\ABC\.dbt\profiles.yml
+[0m12:29:26.629850 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\dbt_project.yml
+[0m12:29:26.744593 [info ] [MainThread]: Configuration:
+[0m12:29:26.745373 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m12:29:26.746095 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:29:26.746816 [info ] [MainThread]: Required dependencies:
+[0m12:29:26.747492 [debug] [MainThread]: Executing "git --help"
+[0m12:29:26.785813 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:29:26.786326 [debug] [MainThread]: STDERR: "b''"
+[0m12:29:26.786725 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:29:26.787368 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:29:26.788037 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:29:26.788879 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\ABC\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:29:26.791754 [debug] [MainThread]: Command `dbt debug` failed at 12:29:26.791578 after 0.37 seconds
+[0m12:29:26.792329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269F34FCFC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269F5312690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269F40258C0>]}
+[0m12:29:26.792984 [debug] [MainThread]: Flushing usage events
+[0m12:29:28.383432 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:31:56.861532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B3047378C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B305933ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B305933890>]}
+
+
+============================== 12:31:56.866700 | 805702f0-0c5c-43da-a5a3-9e5ba3ad2d4a ==============================
+[0m12:31:56.866700 [info ] [MainThread]: Running with dbt=1.10.4
+[0m12:31:56.867648 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\ABC\\Desktop\\10Acadamy\\week_7\\Shipping-a-Data-Product\\dbt_project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\ABC\\Desktop\\10Acadamy\\week_7\\Shipping-a-Data-Product\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:31:56.896813 [info ] [MainThread]: dbt version: 1.10.4
+[0m12:31:56.897517 [info ] [MainThread]: python version: 3.13.2
+[0m12:31:56.898064 [info ] [MainThread]: python path: C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\.venv\Scripts\python.exe
+[0m12:31:56.898615 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:31:57.311044 [info ] [MainThread]: Using profiles dir at C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\.dbt
+[0m12:31:57.311900 [info ] [MainThread]: Using profiles.yml file at C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\.dbt\profiles.yml
+[0m12:31:57.312545 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\dbt_project.yml
+[0m12:31:57.314301 [info ] [MainThread]: adapter type: postgres
+[0m12:31:57.314919 [info ] [MainThread]: adapter version: 1.9.0
+[0m12:31:57.457412 [info ] [MainThread]: Configuration:
+[0m12:31:57.458209 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:31:57.458956 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:31:57.459658 [info ] [MainThread]: Required dependencies:
+[0m12:31:57.460410 [debug] [MainThread]: Executing "git --help"
+[0m12:31:57.504688 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:31:57.506421 [debug] [MainThread]: STDERR: "b''"
+[0m12:31:57.507383 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:31:57.508113 [info ] [MainThread]: Connection:
+[0m12:31:57.508706 [info ] [MainThread]:   host: localhost
+[0m12:31:57.509317 [info ] [MainThread]:   port: 5432
+[0m12:31:57.509878 [info ] [MainThread]:   user: postgres
+[0m12:31:57.510460 [info ] [MainThread]:   database: etl_db
+[0m12:31:57.511054 [info ] [MainThread]:   schema: raw
+[0m12:31:57.511654 [info ] [MainThread]:   connect_timeout: 10
+[0m12:31:57.512304 [info ] [MainThread]:   role: None
+[0m12:31:57.512902 [info ] [MainThread]:   search_path: None
+[0m12:31:57.513453 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:31:57.513999 [info ] [MainThread]:   sslmode: None
+[0m12:31:57.514562 [info ] [MainThread]:   sslcert: None
+[0m12:31:57.515117 [info ] [MainThread]:   sslkey: None
+[0m12:31:57.515667 [info ] [MainThread]:   sslrootcert: None
+[0m12:31:57.516202 [info ] [MainThread]:   application_name: dbt
+[0m12:31:57.516730 [info ] [MainThread]:   retries: 1
+[0m12:31:57.517499 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m12:31:57.971999 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:32:02.252286 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:32:02.252890 [debug] [MainThread]: On debug: select 1 as id
+[0m12:32:02.253374 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:32:02.374135 [debug] [MainThread]: SQL status: SELECT 1 in 0.121 seconds
+[0m12:32:02.375299 [debug] [MainThread]: On debug: Close
+[0m12:32:02.375730 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:32:02.376490 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:32:02.377815 [debug] [MainThread]: Command `dbt debug` succeeded at 12:32:02.377676 after 5.70 seconds
+[0m12:32:02.378195 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:32:02.378611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B306C26520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B306D58830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B305ADA580>]}
+[0m12:32:02.379087 [debug] [MainThread]: Flushing usage events
+[0m12:32:04.016287 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:33:06.217359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E0C478C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E1E47ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E1E47890>]}
+
+
+============================== 12:33:06.222661 | 02852e2d-7c59-4913-8916-b80f5cbab8a2 ==============================
+[0m12:33:06.222661 [info ] [MainThread]: Running with dbt=1.10.4
+[0m12:33:06.223542 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ABC\\Desktop\\10Acadamy\\week_7\\Shipping-a-Data-Product\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\ABC\\Desktop\\10Acadamy\\week_7\\Shipping-a-Data-Product\\dbt_project\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:33:06.558023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E11BCFC0>]}
+[0m12:33:06.661334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E1CE5F20>]}
+[0m12:33:06.663100 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m12:33:07.010068 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m12:33:07.011338 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:33:07.012156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E1EAE250>]}
+[0m12:33:10.364648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E33DB2F0>]}
+[0m12:33:10.457360 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\manifest.json
+[0m12:33:10.460394 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\semantic_manifest.json
+[0m12:33:10.499997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E36F6EB0>]}
+[0m12:33:10.500626 [info ] [MainThread]: Found 5 models, 4 data tests, 2 sources, 433 macros
+[0m12:33:10.501426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E3345E60>]}
+[0m12:33:10.503782 [info ] [MainThread]: 
+[0m12:33:10.504399 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:33:10.504902 [info ] [MainThread]: 
+[0m12:33:10.505613 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m12:33:10.511062 [debug] [ThreadPool]: Acquiring new postgres connection 'list_etl_db'
+[0m12:33:10.523894 [debug] [ThreadPool]: Acquiring new postgres connection 'list_etl_db'
+[0m12:33:10.611287 [debug] [ThreadPool]: Using postgres connection "list_etl_db"
+[0m12:33:10.611790 [debug] [ThreadPool]: On list_etl_db: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "list_etl_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m12:33:10.612138 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:33:10.612613 [debug] [ThreadPool]: Using postgres connection "list_etl_db"
+[0m12:33:10.613598 [debug] [ThreadPool]: On list_etl_db: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "list_etl_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m12:33:10.614062 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:33:10.738246 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.124 seconds
+[0m12:33:10.739923 [debug] [ThreadPool]: On list_etl_db: Close
+[0m12:33:10.740506 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.128 seconds
+[0m12:33:10.742512 [debug] [ThreadPool]: On list_etl_db: Close
+[0m12:33:10.743851 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_etl_db, now create_etl_db_raw_raw)
+[0m12:33:10.744695 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_etl_db, now create_etl_db_raw_analytics)
+[0m12:33:10.745497 [debug] [ThreadPool]: Creating schema "database: "etl_db"
+schema: "raw_raw"
+"
+[0m12:33:10.746352 [debug] [ThreadPool]: Creating schema "database: "etl_db"
+schema: "raw_analytics"
+"
+[0m12:33:10.752663 [debug] [ThreadPool]: Using postgres connection "create_etl_db_raw_raw"
+[0m12:33:10.754984 [debug] [ThreadPool]: Using postgres connection "create_etl_db_raw_analytics"
+[0m12:33:10.755518 [debug] [ThreadPool]: On create_etl_db_raw_raw: BEGIN
+[0m12:33:10.756033 [debug] [ThreadPool]: On create_etl_db_raw_analytics: BEGIN
+[0m12:33:10.756544 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:33:10.757078 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:33:10.831807 [debug] [ThreadPool]: SQL status: BEGIN in 0.075 seconds
+[0m12:33:10.832589 [debug] [ThreadPool]: Using postgres connection "create_etl_db_raw_raw"
+[0m12:33:10.832956 [debug] [ThreadPool]: On create_etl_db_raw_raw: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "create_etl_db_raw_raw"} */
+create schema if not exists "raw_raw"
+[0m12:33:10.833879 [debug] [ThreadPool]: SQL status: BEGIN in 0.077 seconds
+[0m12:33:10.834347 [debug] [ThreadPool]: Using postgres connection "create_etl_db_raw_analytics"
+[0m12:33:10.834672 [debug] [ThreadPool]: On create_etl_db_raw_analytics: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "create_etl_db_raw_analytics"} */
+create schema if not exists "raw_analytics"
+[0m12:33:10.841454 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.006 seconds
+[0m12:33:10.842635 [debug] [ThreadPool]: On create_etl_db_raw_analytics: COMMIT
+[0m12:33:10.843016 [debug] [ThreadPool]: Using postgres connection "create_etl_db_raw_analytics"
+[0m12:33:10.843348 [debug] [ThreadPool]: On create_etl_db_raw_analytics: COMMIT
+[0m12:33:10.843703 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.010 seconds
+[0m12:33:10.844639 [debug] [ThreadPool]: On create_etl_db_raw_raw: COMMIT
+[0m12:33:10.845016 [debug] [ThreadPool]: Using postgres connection "create_etl_db_raw_raw"
+[0m12:33:10.845373 [debug] [ThreadPool]: On create_etl_db_raw_raw: COMMIT
+[0m12:33:10.845764 [debug] [ThreadPool]: SQL status: COMMIT in 0.002 seconds
+[0m12:33:10.846154 [debug] [ThreadPool]: On create_etl_db_raw_analytics: Close
+[0m12:33:10.846615 [debug] [ThreadPool]: SQL status: COMMIT in 0.001 seconds
+[0m12:33:10.847011 [debug] [ThreadPool]: On create_etl_db_raw_raw: Close
+[0m12:33:10.849400 [debug] [ThreadPool]: Acquiring new postgres connection 'list_etl_db_raw_raw'
+[0m12:33:10.856396 [debug] [ThreadPool]: Acquiring new postgres connection 'list_etl_db_raw_analytics'
+[0m12:33:10.860385 [debug] [ThreadPool]: Using postgres connection "list_etl_db_raw_analytics"
+[0m12:33:10.860754 [debug] [ThreadPool]: On list_etl_db_raw_analytics: BEGIN
+[0m12:33:10.861176 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:33:10.861919 [debug] [ThreadPool]: Using postgres connection "list_etl_db_raw_raw"
+[0m12:33:10.862294 [debug] [ThreadPool]: On list_etl_db_raw_raw: BEGIN
+[0m12:33:10.862592 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:33:10.928664 [debug] [ThreadPool]: SQL status: BEGIN in 0.067 seconds
+[0m12:33:10.929313 [debug] [ThreadPool]: Using postgres connection "list_etl_db_raw_analytics"
+[0m12:33:10.929698 [debug] [ThreadPool]: On list_etl_db_raw_analytics: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "list_etl_db_raw_analytics"} */
+select
+      'etl_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_analytics'
+    union all
+    select
+      'etl_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_analytics'
+    union all
+    select
+      'etl_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_analytics'
+  
+[0m12:33:10.930090 [debug] [ThreadPool]: SQL status: BEGIN in 0.067 seconds
+[0m12:33:10.930446 [debug] [ThreadPool]: Using postgres connection "list_etl_db_raw_raw"
+[0m12:33:10.930812 [debug] [ThreadPool]: On list_etl_db_raw_raw: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "list_etl_db_raw_raw"} */
+select
+      'etl_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'etl_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'etl_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_raw'
+  
+[0m12:33:10.976569 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.045 seconds
+[0m12:33:10.982292 [debug] [ThreadPool]: On list_etl_db_raw_raw: ROLLBACK
+[0m12:33:10.984348 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.054 seconds
+[0m12:33:10.990225 [debug] [ThreadPool]: On list_etl_db_raw_analytics: ROLLBACK
+[0m12:33:10.991788 [debug] [ThreadPool]: On list_etl_db_raw_raw: Close
+[0m12:33:10.994478 [debug] [ThreadPool]: On list_etl_db_raw_analytics: Close
+[0m12:33:11.012168 [debug] [MainThread]: Using postgres connection "master"
+[0m12:33:11.012996 [debug] [MainThread]: On master: BEGIN
+[0m12:33:11.014111 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:33:11.087320 [debug] [MainThread]: SQL status: BEGIN in 0.073 seconds
+[0m12:33:11.087834 [debug] [MainThread]: Using postgres connection "master"
+[0m12:33:11.088261 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m12:33:11.107959 [debug] [MainThread]: SQL status: SELECT 0 in 0.019 seconds
+[0m12:33:11.109434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E3A2D0D0>]}
+[0m12:33:11.110030 [debug] [MainThread]: On master: ROLLBACK
+[0m12:33:11.110677 [debug] [MainThread]: Using postgres connection "master"
+[0m12:33:11.111060 [debug] [MainThread]: On master: BEGIN
+[0m12:33:11.111776 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m12:33:11.112130 [debug] [MainThread]: On master: COMMIT
+[0m12:33:11.112505 [debug] [MainThread]: Using postgres connection "master"
+[0m12:33:11.112841 [debug] [MainThread]: On master: COMMIT
+[0m12:33:11.113297 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m12:33:11.113745 [debug] [MainThread]: On master: Close
+[0m12:33:11.146267 [debug] [Thread-1 (]: Began running node model.telegram_etl.stg_images
+[0m12:33:11.147315 [debug] [Thread-2 (]: Began running node model.telegram_etl.stg_messages
+[0m12:33:11.146888 [info ] [Thread-1 (]: 1 of 5 START sql table model raw_raw.stg_images ................................ [RUN]
+[0m12:33:11.148610 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.telegram_etl.stg_images'
+[0m12:33:11.149010 [debug] [Thread-1 (]: Began compiling node model.telegram_etl.stg_images
+[0m12:33:11.157268 [debug] [Thread-1 (]: Writing injected SQL for node "model.telegram_etl.stg_images"
+[0m12:33:11.147907 [info ] [Thread-2 (]: 2 of 5 START sql table model raw_raw.stg_messages .............................. [RUN]
+[0m12:33:11.158151 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.telegram_etl.stg_messages'
+[0m12:33:11.158559 [debug] [Thread-2 (]: Began compiling node model.telegram_etl.stg_messages
+[0m12:33:11.164598 [debug] [Thread-2 (]: Writing injected SQL for node "model.telegram_etl.stg_messages"
+[0m12:33:11.168838 [debug] [Thread-1 (]: Began executing node model.telegram_etl.stg_images
+[0m12:33:11.182143 [debug] [Thread-2 (]: Began executing node model.telegram_etl.stg_messages
+[0m12:33:11.234870 [debug] [Thread-1 (]: Writing runtime sql for node "model.telegram_etl.stg_images"
+[0m12:33:11.235653 [debug] [Thread-2 (]: Writing runtime sql for node "model.telegram_etl.stg_messages"
+[0m12:33:11.239149 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.stg_messages"
+[0m12:33:11.239880 [debug] [Thread-2 (]: On model.telegram_etl.stg_messages: BEGIN
+[0m12:33:11.240345 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:33:11.241165 [debug] [Thread-1 (]: Using postgres connection "model.telegram_etl.stg_images"
+[0m12:33:11.241680 [debug] [Thread-1 (]: On model.telegram_etl.stg_images: BEGIN
+[0m12:33:11.242167 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:33:11.309615 [debug] [Thread-2 (]: SQL status: BEGIN in 0.069 seconds
+[0m12:33:11.310179 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.stg_messages"
+[0m12:33:11.310594 [debug] [Thread-1 (]: SQL status: BEGIN in 0.068 seconds
+[0m12:33:11.311102 [debug] [Thread-2 (]: On model.telegram_etl.stg_messages: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.stg_messages"} */
+
+  
+    
+
+  create  table "etl_db"."raw_raw"."stg_messages__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with base as (
+  select
+    raw->>'message_id'     as message_id,
+    raw->>'channel'        as channel,
+    raw->>'sender_id'      as sender_id,
+    (raw->>'message_date')::timestamptz as message_date,
+    raw->>'message_text'   as message_text
+  from "etl_db"."raw"."messages"
+)
+
+select
+  message_id::bigint,
+  channel,
+  sender_id::bigint,
+  message_date,
+  message_text
+from base
+  );
+  
+[0m12:33:11.311635 [debug] [Thread-1 (]: Using postgres connection "model.telegram_etl.stg_images"
+[0m12:33:11.312233 [debug] [Thread-1 (]: On model.telegram_etl.stg_images: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.stg_images"} */
+
+  
+    
+
+  create  table "etl_db"."raw_raw"."stg_images__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+select
+  image_id,
+  channel,
+  message_id::bigint,
+  file_path,
+  download_date
+from "etl_db"."raw"."images"
+  );
+  
+[0m12:33:11.353099 [debug] [Thread-2 (]: SQL status: SELECT 0 in 0.041 seconds
+[0m12:33:11.354016 [debug] [Thread-1 (]: SQL status: SELECT 95 in 0.041 seconds
+[0m12:33:11.369867 [debug] [Thread-1 (]: Using postgres connection "model.telegram_etl.stg_images"
+[0m12:33:11.372634 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.stg_messages"
+[0m12:33:11.373315 [debug] [Thread-1 (]: On model.telegram_etl.stg_images: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.stg_images"} */
+alter table "etl_db"."raw_raw"."stg_images__dbt_tmp" rename to "stg_images"
+[0m12:33:11.373858 [debug] [Thread-2 (]: On model.telegram_etl.stg_messages: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.stg_messages"} */
+alter table "etl_db"."raw_raw"."stg_messages__dbt_tmp" rename to "stg_messages"
+[0m12:33:11.379501 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m12:33:11.380447 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.006 seconds
+[0m12:33:11.404803 [debug] [Thread-2 (]: On model.telegram_etl.stg_messages: COMMIT
+[0m12:33:11.405564 [debug] [Thread-1 (]: On model.telegram_etl.stg_images: COMMIT
+[0m12:33:11.406111 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.stg_messages"
+[0m12:33:11.406697 [debug] [Thread-1 (]: Using postgres connection "model.telegram_etl.stg_images"
+[0m12:33:11.407215 [debug] [Thread-2 (]: On model.telegram_etl.stg_messages: COMMIT
+[0m12:33:11.407740 [debug] [Thread-1 (]: On model.telegram_etl.stg_images: COMMIT
+[0m12:33:11.410070 [debug] [Thread-2 (]: SQL status: COMMIT in 0.002 seconds
+[0m12:33:11.417861 [debug] [Thread-2 (]: Applying DROP to: "etl_db"."raw_raw"."stg_messages__dbt_backup"
+[0m12:33:11.418374 [debug] [Thread-1 (]: SQL status: COMMIT in 0.010 seconds
+[0m12:33:11.424747 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.stg_messages"
+[0m12:33:11.428333 [debug] [Thread-1 (]: Applying DROP to: "etl_db"."raw_raw"."stg_images__dbt_backup"
+[0m12:33:11.429050 [debug] [Thread-2 (]: On model.telegram_etl.stg_messages: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.stg_messages"} */
+drop table if exists "etl_db"."raw_raw"."stg_messages__dbt_backup" cascade
+[0m12:33:11.429993 [debug] [Thread-1 (]: Using postgres connection "model.telegram_etl.stg_images"
+[0m12:33:11.430563 [debug] [Thread-1 (]: On model.telegram_etl.stg_images: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.stg_images"} */
+drop table if exists "etl_db"."raw_raw"."stg_images__dbt_backup" cascade
+[0m12:33:11.431728 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m12:33:11.434362 [debug] [Thread-2 (]: On model.telegram_etl.stg_messages: Close
+[0m12:33:11.434857 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m12:33:11.437179 [debug] [Thread-1 (]: On model.telegram_etl.stg_images: Close
+[0m12:33:11.440533 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E376FD80>]}
+[0m12:33:11.441730 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E1139EF0>]}
+[0m12:33:11.441297 [info ] [Thread-2 (]: 2 of 5 OK created sql table model raw_raw.stg_messages ......................... [[32mSELECT 0[0m in 0.28s]
+[0m12:33:11.443425 [debug] [Thread-2 (]: Finished running node model.telegram_etl.stg_messages
+[0m12:33:11.442713 [info ] [Thread-1 (]: 1 of 5 OK created sql table model raw_raw.stg_images ........................... [[32mSELECT 95[0m in 0.29s]
+[0m12:33:11.444549 [debug] [Thread-1 (]: Finished running node model.telegram_etl.stg_images
+[0m12:33:11.445072 [debug] [Thread-4 (]: Began running node model.telegram_etl.dim_dates
+[0m12:33:11.445595 [debug] [Thread-3 (]: Began running node model.telegram_etl.dim_channels
+[0m12:33:11.446294 [info ] [Thread-4 (]: 4 of 5 START sql view model raw_analytics.dim_dates ............................ [RUN]
+[0m12:33:11.448658 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.telegram_etl.dim_dates'
+[0m12:33:11.446838 [info ] [Thread-3 (]: 3 of 5 START sql view model raw_analytics.dim_channels ......................... [RUN]
+[0m12:33:11.450821 [debug] [Thread-4 (]: Began compiling node model.telegram_etl.dim_dates
+[0m12:33:11.452260 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.telegram_etl.dim_channels'
+[0m12:33:11.457718 [debug] [Thread-4 (]: Writing injected SQL for node "model.telegram_etl.dim_dates"
+[0m12:33:11.458962 [debug] [Thread-3 (]: Began compiling node model.telegram_etl.dim_channels
+[0m12:33:11.467076 [debug] [Thread-3 (]: Writing injected SQL for node "model.telegram_etl.dim_channels"
+[0m12:33:11.469806 [debug] [Thread-4 (]: Began executing node model.telegram_etl.dim_dates
+[0m12:33:11.478798 [debug] [Thread-3 (]: Began executing node model.telegram_etl.dim_channels
+[0m12:33:11.568111 [debug] [Thread-3 (]: Writing runtime sql for node "model.telegram_etl.dim_channels"
+[0m12:33:11.570669 [debug] [Thread-4 (]: Writing runtime sql for node "model.telegram_etl.dim_dates"
+[0m12:33:11.575428 [debug] [Thread-3 (]: Using postgres connection "model.telegram_etl.dim_channels"
+[0m12:33:11.576860 [debug] [Thread-3 (]: On model.telegram_etl.dim_channels: BEGIN
+[0m12:33:11.578001 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:33:11.579731 [debug] [Thread-4 (]: Using postgres connection "model.telegram_etl.dim_dates"
+[0m12:33:11.582452 [debug] [Thread-4 (]: On model.telegram_etl.dim_dates: BEGIN
+[0m12:33:11.583453 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:33:11.657218 [debug] [Thread-3 (]: SQL status: BEGIN in 0.079 seconds
+[0m12:33:11.657905 [debug] [Thread-3 (]: Using postgres connection "model.telegram_etl.dim_channels"
+[0m12:33:11.658412 [debug] [Thread-3 (]: On model.telegram_etl.dim_channels: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.dim_channels"} */
+
+  create view "etl_db"."raw_analytics"."dim_channels__dbt_tmp"
+    
+    
+  as (
+    
+
+select distinct
+  channel
+from "etl_db"."raw_raw"."stg_messages"
+  );
+[0m12:33:11.665604 [debug] [Thread-4 (]: SQL status: BEGIN in 0.082 seconds
+[0m12:33:11.666267 [debug] [Thread-4 (]: Using postgres connection "model.telegram_etl.dim_dates"
+[0m12:33:11.666889 [debug] [Thread-4 (]: On model.telegram_etl.dim_dates: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.dim_dates"} */
+
+  create view "etl_db"."raw_analytics"."dim_dates__dbt_tmp"
+    
+    
+  as (
+    
+
+select distinct
+  date_trunc('day', message_date) as day
+from "etl_db"."raw_raw"."stg_messages"
+  );
+[0m12:33:11.672982 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.014 seconds
+[0m12:33:11.679975 [debug] [Thread-3 (]: Using postgres connection "model.telegram_etl.dim_channels"
+[0m12:33:11.680662 [debug] [Thread-4 (]: SQL status: CREATE VIEW in 0.013 seconds
+[0m12:33:11.681216 [debug] [Thread-3 (]: On model.telegram_etl.dim_channels: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.dim_channels"} */
+alter table "etl_db"."raw_analytics"."dim_channels__dbt_tmp" rename to "dim_channels"
+[0m12:33:11.685941 [debug] [Thread-4 (]: Using postgres connection "model.telegram_etl.dim_dates"
+[0m12:33:11.686796 [debug] [Thread-4 (]: On model.telegram_etl.dim_dates: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.dim_dates"} */
+alter table "etl_db"."raw_analytics"."dim_dates__dbt_tmp" rename to "dim_dates"
+[0m12:33:11.687813 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m12:33:11.688561 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m12:33:11.691484 [debug] [Thread-3 (]: On model.telegram_etl.dim_channels: COMMIT
+[0m12:33:11.693424 [debug] [Thread-4 (]: On model.telegram_etl.dim_dates: COMMIT
+[0m12:33:11.693951 [debug] [Thread-3 (]: Using postgres connection "model.telegram_etl.dim_channels"
+[0m12:33:11.694424 [debug] [Thread-4 (]: Using postgres connection "model.telegram_etl.dim_dates"
+[0m12:33:11.694877 [debug] [Thread-3 (]: On model.telegram_etl.dim_channels: COMMIT
+[0m12:33:11.695333 [debug] [Thread-4 (]: On model.telegram_etl.dim_dates: COMMIT
+[0m12:33:11.697618 [debug] [Thread-3 (]: SQL status: COMMIT in 0.001 seconds
+[0m12:33:11.698352 [debug] [Thread-4 (]: SQL status: COMMIT in 0.002 seconds
+[0m12:33:11.701021 [debug] [Thread-3 (]: Applying DROP to: "etl_db"."raw_analytics"."dim_channels__dbt_backup"
+[0m12:33:11.703559 [debug] [Thread-4 (]: Applying DROP to: "etl_db"."raw_analytics"."dim_dates__dbt_backup"
+[0m12:33:11.706845 [debug] [Thread-3 (]: Using postgres connection "model.telegram_etl.dim_channels"
+[0m12:33:11.707838 [debug] [Thread-4 (]: Using postgres connection "model.telegram_etl.dim_dates"
+[0m12:33:11.708325 [debug] [Thread-3 (]: On model.telegram_etl.dim_channels: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.dim_channels"} */
+drop view if exists "etl_db"."raw_analytics"."dim_channels__dbt_backup" cascade
+[0m12:33:11.708872 [debug] [Thread-4 (]: On model.telegram_etl.dim_dates: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.dim_dates"} */
+drop view if exists "etl_db"."raw_analytics"."dim_dates__dbt_backup" cascade
+[0m12:33:11.709786 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m12:33:11.710337 [debug] [Thread-4 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m12:33:11.713396 [debug] [Thread-3 (]: On model.telegram_etl.dim_channels: Close
+[0m12:33:11.715998 [debug] [Thread-4 (]: On model.telegram_etl.dim_dates: Close
+[0m12:33:11.717290 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E3A39950>]}
+[0m12:33:11.718504 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E3ACF1D0>]}
+[0m12:33:11.720302 [info ] [Thread-3 (]: 3 of 5 OK created sql view model raw_analytics.dim_channels .................... [[32mCREATE VIEW[0m in 0.27s]
+[0m12:33:11.723328 [debug] [Thread-3 (]: Finished running node model.telegram_etl.dim_channels
+[0m12:33:11.721865 [info ] [Thread-4 (]: 4 of 5 OK created sql view model raw_analytics.dim_dates ....................... [[32mCREATE VIEW[0m in 0.27s]
+[0m12:33:11.724688 [debug] [Thread-4 (]: Finished running node model.telegram_etl.dim_dates
+[0m12:33:11.725791 [debug] [Thread-2 (]: Began running node model.telegram_etl.fct_messages
+[0m12:33:11.726762 [info ] [Thread-2 (]: 5 of 5 START sql table model raw_analytics.fct_messages ........................ [RUN]
+[0m12:33:11.727924 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.telegram_etl.stg_messages, now model.telegram_etl.fct_messages)
+[0m12:33:11.728429 [debug] [Thread-2 (]: Began compiling node model.telegram_etl.fct_messages
+[0m12:33:11.735461 [debug] [Thread-2 (]: Writing injected SQL for node "model.telegram_etl.fct_messages"
+[0m12:33:11.738405 [debug] [Thread-2 (]: Began executing node model.telegram_etl.fct_messages
+[0m12:33:11.747909 [debug] [Thread-2 (]: Writing runtime sql for node "model.telegram_etl.fct_messages"
+[0m12:33:11.750026 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.fct_messages"
+[0m12:33:11.750719 [debug] [Thread-2 (]: On model.telegram_etl.fct_messages: BEGIN
+[0m12:33:11.751124 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m12:33:11.935433 [debug] [Thread-2 (]: SQL status: BEGIN in 0.184 seconds
+[0m12:33:11.936095 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.fct_messages"
+[0m12:33:11.936550 [debug] [Thread-2 (]: On model.telegram_etl.fct_messages: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.fct_messages"} */
+
+  
+    
+
+  create  table "etl_db"."raw_analytics"."fct_messages__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+select
+  m.message_id,
+  m.channel,
+  d.day        as message_day,
+  m.sender_id,
+  length(m.message_text) as text_length
+from "etl_db"."raw_raw"."stg_messages" as m
+join "etl_db"."raw_analytics"."dim_dates"      as d on date_trunc('day', m.message_date) = d.day
+  );
+  
+[0m12:33:11.949450 [debug] [Thread-2 (]: SQL status: SELECT 0 in 0.012 seconds
+[0m12:33:11.952578 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.fct_messages"
+[0m12:33:11.953014 [debug] [Thread-2 (]: On model.telegram_etl.fct_messages: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.fct_messages"} */
+alter table "etl_db"."raw_analytics"."fct_messages__dbt_tmp" rename to "fct_messages"
+[0m12:33:11.953747 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m12:33:11.955245 [debug] [Thread-2 (]: On model.telegram_etl.fct_messages: COMMIT
+[0m12:33:11.955645 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.fct_messages"
+[0m12:33:11.956027 [debug] [Thread-2 (]: On model.telegram_etl.fct_messages: COMMIT
+[0m12:33:11.957297 [debug] [Thread-2 (]: SQL status: COMMIT in 0.001 seconds
+[0m12:33:11.959418 [debug] [Thread-2 (]: Applying DROP to: "etl_db"."raw_analytics"."fct_messages__dbt_backup"
+[0m12:33:11.960296 [debug] [Thread-2 (]: Using postgres connection "model.telegram_etl.fct_messages"
+[0m12:33:11.960699 [debug] [Thread-2 (]: On model.telegram_etl.fct_messages: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "model.telegram_etl.fct_messages"} */
+drop table if exists "etl_db"."raw_analytics"."fct_messages__dbt_backup" cascade
+[0m12:33:11.961467 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m12:33:11.963645 [debug] [Thread-2 (]: On model.telegram_etl.fct_messages: Close
+[0m12:33:11.964850 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02852e2d-7c59-4913-8916-b80f5cbab8a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E3145130>]}
+[0m12:33:11.965960 [info ] [Thread-2 (]: 5 of 5 OK created sql table model raw_analytics.fct_messages ................... [[32mSELECT 0[0m in 0.24s]
+[0m12:33:11.967404 [debug] [Thread-2 (]: Finished running node model.telegram_etl.fct_messages
+[0m12:33:11.969296 [debug] [MainThread]: Using postgres connection "master"
+[0m12:33:11.969710 [debug] [MainThread]: On master: BEGIN
+[0m12:33:11.970145 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:33:12.039105 [debug] [MainThread]: SQL status: BEGIN in 0.069 seconds
+[0m12:33:12.039589 [debug] [MainThread]: On master: COMMIT
+[0m12:33:12.039931 [debug] [MainThread]: Using postgres connection "master"
+[0m12:33:12.040240 [debug] [MainThread]: On master: COMMIT
+[0m12:33:12.040742 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m12:33:12.041098 [debug] [MainThread]: On master: Close
+[0m12:33:12.041630 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:33:12.041953 [debug] [MainThread]: Connection 'create_etl_db_raw_analytics' was properly closed.
+[0m12:33:12.042267 [debug] [MainThread]: Connection 'create_etl_db_raw_raw' was properly closed.
+[0m12:33:12.042554 [debug] [MainThread]: Connection 'list_etl_db_raw_raw' was properly closed.
+[0m12:33:12.042848 [debug] [MainThread]: Connection 'list_etl_db_raw_analytics' was properly closed.
+[0m12:33:12.043124 [debug] [MainThread]: Connection 'model.telegram_etl.stg_images' was properly closed.
+[0m12:33:12.043501 [debug] [MainThread]: Connection 'model.telegram_etl.fct_messages' was properly closed.
+[0m12:33:12.043923 [debug] [MainThread]: Connection 'model.telegram_etl.dim_dates' was properly closed.
+[0m12:33:12.044181 [debug] [MainThread]: Connection 'model.telegram_etl.dim_channels' was properly closed.
+[0m12:33:12.044571 [info ] [MainThread]: 
+[0m12:33:12.045391 [info ] [MainThread]: Finished running 3 table models, 2 view models in 0 hours 0 minutes and 1.54 seconds (1.54s).
+[0m12:33:12.048565 [debug] [MainThread]: Command end result
+[0m12:33:12.072447 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\manifest.json
+[0m12:33:12.075076 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\semantic_manifest.json
+[0m12:33:12.085132 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\run_results.json
+[0m12:33:12.085730 [info ] [MainThread]: 
+[0m12:33:12.086291 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:33:12.086913 [info ] [MainThread]: 
+[0m12:33:12.087442 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m12:33:12.088747 [debug] [MainThread]: Command `dbt run` succeeded at 12:33:12.088623 after 6.03 seconds
+[0m12:33:12.089135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E1C4B8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E354B950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D1E3FBBAD0>]}
+[0m12:33:12.089594 [debug] [MainThread]: Flushing usage events
+[0m12:33:14.006054 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:34:19.570361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BB1D78C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BC3D7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BC3D7890>]}
+
+
+============================== 12:34:19.575343 | 65db63fa-7ab8-41aa-99b2-d3149157904a ==============================
+[0m12:34:19.575343 [info ] [MainThread]: Running with dbt=1.10.4
+[0m12:34:19.576216 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ABC\\Desktop\\10Acadamy\\week_7\\Shipping-a-Data-Product\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\ABC\\Desktop\\10Acadamy\\week_7\\Shipping-a-Data-Product\\dbt_project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt test', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:34:19.793258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '65db63fa-7ab8-41aa-99b2-d3149157904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BB74CFC0>]}
+[0m12:34:19.858185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '65db63fa-7ab8-41aa-99b2-d3149157904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BC275F20>]}
+[0m12:34:19.859959 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m12:34:20.146681 [debug] [MainThread]: checksum: 073cb5a296270136b24f9c040fdebd0642ef9c263903ef463bfe7e190c538da2, vars: {}, profile: , target: , version: 1.10.4
+[0m12:34:20.325305 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:34:20.325722 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:34:20.374750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '65db63fa-7ab8-41aa-99b2-d3149157904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BD998350>]}
+[0m12:34:20.456981 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\manifest.json
+[0m12:34:20.459903 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\semantic_manifest.json
+[0m12:34:20.504038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '65db63fa-7ab8-41aa-99b2-d3149157904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BDAC85F0>]}
+[0m12:34:20.504600 [info ] [MainThread]: Found 5 models, 4 data tests, 2 sources, 433 macros
+[0m12:34:20.505200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65db63fa-7ab8-41aa-99b2-d3149157904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BDADCD70>]}
+[0m12:34:20.507199 [info ] [MainThread]: 
+[0m12:34:20.507814 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:34:20.508375 [info ] [MainThread]: 
+[0m12:34:20.509235 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m12:34:20.514105 [debug] [ThreadPool]: Acquiring new postgres connection 'list_etl_db_raw_raw'
+[0m12:34:20.527140 [debug] [ThreadPool]: Acquiring new postgres connection 'list_etl_db_raw_analytics'
+[0m12:34:20.613027 [debug] [ThreadPool]: Using postgres connection "list_etl_db_raw_raw"
+[0m12:34:20.613590 [debug] [ThreadPool]: On list_etl_db_raw_raw: BEGIN
+[0m12:34:20.614112 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:34:20.614867 [debug] [ThreadPool]: Using postgres connection "list_etl_db_raw_analytics"
+[0m12:34:20.615341 [debug] [ThreadPool]: On list_etl_db_raw_analytics: BEGIN
+[0m12:34:20.615691 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:34:20.682364 [debug] [ThreadPool]: SQL status: BEGIN in 0.067 seconds
+[0m12:34:20.682804 [debug] [ThreadPool]: Using postgres connection "list_etl_db_raw_analytics"
+[0m12:34:20.683321 [debug] [ThreadPool]: On list_etl_db_raw_analytics: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "list_etl_db_raw_analytics"} */
+select
+      'etl_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_analytics'
+    union all
+    select
+      'etl_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_analytics'
+    union all
+    select
+      'etl_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_analytics'
+  
+[0m12:34:20.691193 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.007 seconds
+[0m12:34:20.692776 [debug] [ThreadPool]: On list_etl_db_raw_analytics: ROLLBACK
+[0m12:34:20.693438 [debug] [ThreadPool]: On list_etl_db_raw_analytics: Close
+[0m12:34:20.794073 [debug] [ThreadPool]: SQL status: BEGIN in 0.180 seconds
+[0m12:34:20.794629 [debug] [ThreadPool]: Using postgres connection "list_etl_db_raw_raw"
+[0m12:34:20.795119 [debug] [ThreadPool]: On list_etl_db_raw_raw: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "list_etl_db_raw_raw"} */
+select
+      'etl_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'etl_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'raw_raw'
+    union all
+    select
+      'etl_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'raw_raw'
+  
+[0m12:34:20.803783 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.008 seconds
+[0m12:34:20.805523 [debug] [ThreadPool]: On list_etl_db_raw_raw: ROLLBACK
+[0m12:34:20.806190 [debug] [ThreadPool]: On list_etl_db_raw_raw: Close
+[0m12:34:20.813776 [debug] [MainThread]: Using postgres connection "master"
+[0m12:34:20.814300 [debug] [MainThread]: On master: BEGIN
+[0m12:34:20.814710 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:34:20.875068 [debug] [MainThread]: SQL status: BEGIN in 0.060 seconds
+[0m12:34:20.875533 [debug] [MainThread]: Using postgres connection "master"
+[0m12:34:20.875971 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m12:34:20.896309 [debug] [MainThread]: SQL status: SELECT 2 in 0.020 seconds
+[0m12:34:20.898699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65db63fa-7ab8-41aa-99b2-d3149157904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BDCAA4E0>]}
+[0m12:34:20.899288 [debug] [MainThread]: On master: ROLLBACK
+[0m12:34:20.899973 [debug] [MainThread]: Using postgres connection "master"
+[0m12:34:20.900454 [debug] [MainThread]: On master: BEGIN
+[0m12:34:20.901300 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m12:34:20.901765 [debug] [MainThread]: On master: COMMIT
+[0m12:34:20.902222 [debug] [MainThread]: Using postgres connection "master"
+[0m12:34:20.902692 [debug] [MainThread]: On master: COMMIT
+[0m12:34:20.903321 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m12:34:20.903769 [debug] [MainThread]: On master: Close
+[0m12:34:20.910674 [debug] [Thread-3 (]: Began running node test.telegram_etl.unique_stg_images_image_id.3ec78c1390
+[0m12:34:20.911592 [debug] [Thread-4 (]: Began running node test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d
+[0m12:34:20.912291 [debug] [Thread-2 (]: Began running node test.telegram_etl.not_null_stg_messages_message_id.deb2081500
+[0m12:34:20.913603 [debug] [Thread-1 (]: Began running node test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a
+[0m12:34:20.912958 [info ] [Thread-3 (]: 3 of 4 START test unique_stg_images_image_id ................................... [RUN]
+[0m12:34:20.916851 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.telegram_etl.unique_stg_images_image_id.3ec78c1390'
+[0m12:34:20.917428 [debug] [Thread-3 (]: Began compiling node test.telegram_etl.unique_stg_images_image_id.3ec78c1390
+[0m12:34:20.914400 [info ] [Thread-4 (]: 4 of 4 START test unique_stg_messages_message_id ............................... [RUN]
+[0m12:34:20.936432 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d'
+[0m12:34:20.939784 [debug] [Thread-3 (]: Writing injected SQL for node "test.telegram_etl.unique_stg_images_image_id.3ec78c1390"
+[0m12:34:20.941553 [debug] [Thread-4 (]: Began compiling node test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d
+[0m12:34:20.915060 [info ] [Thread-2 (]: 2 of 4 START test not_null_stg_messages_message_id ............................. [RUN]
+[0m12:34:20.946650 [debug] [Thread-4 (]: Writing injected SQL for node "test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d"
+[0m12:34:20.947511 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.telegram_etl.not_null_stg_messages_message_id.deb2081500'
+[0m12:34:20.915824 [info ] [Thread-1 (]: 1 of 4 START test not_null_stg_images_image_id ................................. [RUN]
+[0m12:34:20.948528 [debug] [Thread-2 (]: Began compiling node test.telegram_etl.not_null_stg_messages_message_id.deb2081500
+[0m12:34:20.949477 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a'
+[0m12:34:20.958712 [debug] [Thread-4 (]: Began executing node test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d
+[0m12:34:20.965607 [debug] [Thread-2 (]: Writing injected SQL for node "test.telegram_etl.not_null_stg_messages_message_id.deb2081500"
+[0m12:34:20.966225 [debug] [Thread-3 (]: Began executing node test.telegram_etl.unique_stg_images_image_id.3ec78c1390
+[0m12:34:20.966813 [debug] [Thread-1 (]: Began compiling node test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a
+[0m12:34:21.009770 [debug] [Thread-4 (]: Writing runtime sql for node "test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d"
+[0m12:34:21.012724 [debug] [Thread-3 (]: Writing runtime sql for node "test.telegram_etl.unique_stg_images_image_id.3ec78c1390"
+[0m12:34:21.013170 [debug] [Thread-1 (]: Writing injected SQL for node "test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a"
+[0m12:34:21.014472 [debug] [Thread-2 (]: Began executing node test.telegram_etl.not_null_stg_messages_message_id.deb2081500
+[0m12:34:21.017043 [debug] [Thread-2 (]: Writing runtime sql for node "test.telegram_etl.not_null_stg_messages_message_id.deb2081500"
+[0m12:34:21.018542 [debug] [Thread-1 (]: Began executing node test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a
+[0m12:34:21.024293 [debug] [Thread-4 (]: Using postgres connection "test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d"
+[0m12:34:21.025145 [debug] [Thread-1 (]: Writing runtime sql for node "test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a"
+[0m12:34:21.025688 [debug] [Thread-3 (]: Using postgres connection "test.telegram_etl.unique_stg_images_image_id.3ec78c1390"
+[0m12:34:21.026239 [debug] [Thread-4 (]: On test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d: BEGIN
+[0m12:34:21.027021 [debug] [Thread-3 (]: On test.telegram_etl.unique_stg_images_image_id.3ec78c1390: BEGIN
+[0m12:34:21.027744 [debug] [Thread-2 (]: Using postgres connection "test.telegram_etl.not_null_stg_messages_message_id.deb2081500"
+[0m12:34:21.028400 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m12:34:21.029089 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:34:21.029617 [debug] [Thread-2 (]: On test.telegram_etl.not_null_stg_messages_message_id.deb2081500: BEGIN
+[0m12:34:21.030310 [debug] [Thread-1 (]: Using postgres connection "test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a"
+[0m12:34:21.031285 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:34:21.031853 [debug] [Thread-1 (]: On test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a: BEGIN
+[0m12:34:21.032585 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:34:21.111218 [debug] [Thread-3 (]: SQL status: BEGIN in 0.082 seconds
+[0m12:34:21.112059 [debug] [Thread-3 (]: Using postgres connection "test.telegram_etl.unique_stg_images_image_id.3ec78c1390"
+[0m12:34:21.112828 [debug] [Thread-3 (]: On test.telegram_etl.unique_stg_images_image_id.3ec78c1390: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "test.telegram_etl.unique_stg_images_image_id.3ec78c1390"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    image_id as unique_field,
+    count(*) as n_records
+
+from "etl_db"."raw_raw"."stg_images"
+where image_id is not null
+group by image_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:34:21.113433 [debug] [Thread-4 (]: SQL status: BEGIN in 0.085 seconds
+[0m12:34:21.114187 [debug] [Thread-4 (]: Using postgres connection "test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d"
+[0m12:34:21.115080 [debug] [Thread-4 (]: On test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    message_id as unique_field,
+    count(*) as n_records
+
+from "etl_db"."raw_raw"."stg_messages"
+where message_id is not null
+group by message_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:34:21.117866 [debug] [Thread-2 (]: SQL status: BEGIN in 0.086 seconds
+[0m12:34:21.118880 [debug] [Thread-2 (]: Using postgres connection "test.telegram_etl.not_null_stg_messages_message_id.deb2081500"
+[0m12:34:21.119767 [debug] [Thread-2 (]: On test.telegram_etl.not_null_stg_messages_message_id.deb2081500: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "test.telegram_etl.not_null_stg_messages_message_id.deb2081500"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select message_id
+from "etl_db"."raw_raw"."stg_messages"
+where message_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:34:21.120827 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.007 seconds
+[0m12:34:21.125254 [debug] [Thread-3 (]: On test.telegram_etl.unique_stg_images_image_id.3ec78c1390: ROLLBACK
+[0m12:34:21.126031 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.010 seconds
+[0m12:34:21.127531 [debug] [Thread-4 (]: On test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d: ROLLBACK
+[0m12:34:21.127997 [debug] [Thread-1 (]: SQL status: BEGIN in 0.095 seconds
+[0m12:34:21.128416 [debug] [Thread-3 (]: On test.telegram_etl.unique_stg_images_image_id.3ec78c1390: Close
+[0m12:34:21.128844 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.008 seconds
+[0m12:34:21.129247 [debug] [Thread-4 (]: On test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d: Close
+[0m12:34:21.129642 [debug] [Thread-1 (]: Using postgres connection "test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a"
+[0m12:34:21.131371 [debug] [Thread-2 (]: On test.telegram_etl.not_null_stg_messages_message_id.deb2081500: ROLLBACK
+[0m12:34:21.132649 [debug] [Thread-1 (]: On test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a: /* {"app": "dbt", "dbt_version": "1.10.4", "profile_name": "telegram_profile", "target_name": "dev", "node_id": "test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select image_id
+from "etl_db"."raw_raw"."stg_images"
+where image_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m12:34:21.132099 [info ] [Thread-3 (]: 3 of 4 PASS unique_stg_images_image_id ......................................... [[32mPASS[0m in 0.22s]
+[0m12:34:21.134575 [debug] [Thread-3 (]: Finished running node test.telegram_etl.unique_stg_images_image_id.3ec78c1390
+[0m12:34:21.135136 [debug] [Thread-2 (]: On test.telegram_etl.not_null_stg_messages_message_id.deb2081500: Close
+[0m12:34:21.136019 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.002 seconds
+[0m12:34:21.133656 [info ] [Thread-4 (]: 4 of 4 PASS unique_stg_messages_message_id ..................................... [[32mPASS[0m in 0.20s]
+[0m12:34:21.137851 [debug] [Thread-1 (]: On test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a: ROLLBACK
+[0m12:34:21.139495 [debug] [Thread-4 (]: Finished running node test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d
+[0m12:34:21.138648 [info ] [Thread-2 (]: 2 of 4 PASS not_null_stg_messages_message_id ................................... [[32mPASS[0m in 0.19s]
+[0m12:34:21.140347 [debug] [Thread-1 (]: On test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a: Close
+[0m12:34:21.141134 [debug] [Thread-2 (]: Finished running node test.telegram_etl.not_null_stg_messages_message_id.deb2081500
+[0m12:34:21.142074 [info ] [Thread-1 (]: 1 of 4 PASS not_null_stg_images_image_id ....................................... [[32mPASS[0m in 0.19s]
+[0m12:34:21.143684 [debug] [Thread-1 (]: Finished running node test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a
+[0m12:34:21.146710 [debug] [MainThread]: Using postgres connection "master"
+[0m12:34:21.147213 [debug] [MainThread]: On master: BEGIN
+[0m12:34:21.147558 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:34:21.210425 [debug] [MainThread]: SQL status: BEGIN in 0.063 seconds
+[0m12:34:21.210967 [debug] [MainThread]: On master: COMMIT
+[0m12:34:21.211342 [debug] [MainThread]: Using postgres connection "master"
+[0m12:34:21.211685 [debug] [MainThread]: On master: COMMIT
+[0m12:34:21.212199 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m12:34:21.212591 [debug] [MainThread]: On master: Close
+[0m12:34:21.213155 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:34:21.213530 [debug] [MainThread]: Connection 'list_etl_db_raw_raw' was properly closed.
+[0m12:34:21.213838 [debug] [MainThread]: Connection 'list_etl_db_raw_analytics' was properly closed.
+[0m12:34:21.214130 [debug] [MainThread]: Connection 'test.telegram_etl.unique_stg_images_image_id.3ec78c1390' was properly closed.
+[0m12:34:21.214419 [debug] [MainThread]: Connection 'test.telegram_etl.unique_stg_messages_message_id.2f3b3e209d' was properly closed.
+[0m12:34:21.214731 [debug] [MainThread]: Connection 'test.telegram_etl.not_null_stg_messages_message_id.deb2081500' was properly closed.
+[0m12:34:21.215028 [debug] [MainThread]: Connection 'test.telegram_etl.not_null_stg_images_image_id.2aca71fc4a' was properly closed.
+[0m12:34:21.215398 [info ] [MainThread]: 
+[0m12:34:21.215971 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 0.71 seconds (0.71s).
+[0m12:34:21.217649 [debug] [MainThread]: Command end result
+[0m12:34:21.304993 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\manifest.json
+[0m12:34:21.308451 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\semantic_manifest.json
+[0m12:34:21.317709 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\ABC\Desktop\10Acadamy\week_7\Shipping-a-Data-Product\dbt_project\target\run_results.json
+[0m12:34:21.318303 [info ] [MainThread]: 
+[0m12:34:21.319128 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:34:21.319850 [info ] [MainThread]: 
+[0m12:34:21.320555 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m12:34:21.322023 [debug] [MainThread]: Command `dbt test` succeeded at 12:34:21.321881 after 1.89 seconds
+[0m12:34:21.322498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BC2E0C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BDAAE2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232BDAAE200>]}
+[0m12:34:21.322958 [debug] [MainThread]: Flushing usage events
+[0m12:34:22.934758 [debug] [MainThread]: An error was encountered while trying to flush usage events
