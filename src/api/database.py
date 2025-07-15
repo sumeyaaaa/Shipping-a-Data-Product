@@ -52,3 +52,16 @@ SessionLocal = sessionmaker(
     autoflush=False,
     bind=engine
 )
+from sqlalchemy.orm import Session
+from typing import Generator
+
+def get_db() -> Generator[Session, None, None]:
+    """
+    FastAPI dependency that yields a SQLAlchemy Session and
+    ensures it’s closed after the request completes.
+    """
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
