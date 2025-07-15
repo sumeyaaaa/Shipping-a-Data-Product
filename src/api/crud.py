@@ -19,6 +19,22 @@ def get_top_products(limit: int):
         rows = session.execute(sql, {"limit": limit}).all()
     return [TopProduct(product=row[0], mentions=row[1]) for row in rows]
 
+def get_top_detected_objects(limit: int):
+    sql = text(
+        """
+        SELECT
+          object_class     AS product,
+          COUNT(*)         AS mentions
+        FROM analytics.fct_image_detections
+        GROUP BY object_class
+        ORDER BY mentions DESC
+        LIMIT :limit
+        """
+    )
+    with SessionLocal() as session:
+        rows = session.execute(sql, {"limit": limit}).all()
+    return [TopProduct(product=row[0], mentions=row[1]) for row in rows]
+
 def get_channel_activity(channel: str):
     sql = text(
         """
