@@ -51,8 +51,6 @@ This project builds an end-to-end **ELT pipeline** that scrapes public Ethiopian
 - **Task 3 – Image Enrichment with YOLOv8:**  
   - Ran YOLOv8 inference on scraped images; inserted detections into `analytics.fct_image_detections`.  
 
-## Upcoming Tasks  
-
 - **Task 4 – Analytical API (FastAPI):**  
   - Build endpoints to answer business questions (top products, channel activity, posting trends).  
 - **Task 5 – Pipeline Orchestration (Dagster):**  
@@ -98,6 +96,21 @@ This project builds an end-to-end **ELT pipeline** that scrapes public Ethiopian
    ```bash
    pip install dagster dagster-webserver
    dagster dev
+
+## Tech Stack
+
+- **Python**: Core scripting language for ETL, model inference, and API  
+- **Telethon**: Telegram API client for scraping messages & media  
+- **psycopg2**: PostgreSQL driver for schema setup and raw data loading  
+- **SQLAlchemy**: ORM & session management for the FastAPI application  
+- **PostgreSQL**: Data warehouse with `raw` and `analytics` schemas  
+- **dbt (Data Build Tool)**: In-warehouse ELT for staging and dimensional (star-schema) modeling, testing, and documentation  
+- **Ultralytics YOLOv8**: State-of-the-art object-detection model for image enrichment  
+- **FastAPI**: High-performance Python web framework for REST endpoints  
+- **Uvicorn**: ASGI server for serving the FastAPI app  
+- **Dagster**: Pipeline orchestration, scheduling, and observability  
+- **Docker & Docker Compose**: Containerization of services (API, dbt, Postgres, etc.)  
+- **python-dotenv**: Secure management of environment variables via a `.env` file  
    ```
 
 ## Example API Requests  
@@ -106,3 +119,13 @@ curl "http://localhost:8000/api/reports/top-products?limit=5"
 curl "http://localhost:8000/api/channels/lobelia4cosmetics/activity"
 curl "http://localhost:8000/api/reports/posting-trends?interval=weekly"
 ```
+--
+
+## 📄 License
+
+This project is open-source and available under the [Apache License](LICENSE).
+
+## Next recommended Steps  
+- Improve YOLO model accuracy with custom training data  
+- Add authentication and user roles to the API  
+- Deploy to a cloud environment with CI/CD
