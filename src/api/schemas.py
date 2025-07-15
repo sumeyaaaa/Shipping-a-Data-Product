@@ -1,8 +1,9 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional
 
 class TopProduct(BaseModel):
-    product: str
+    product: Optional[str]
     mentions: int
 
 class ChannelActivity(BaseModel):

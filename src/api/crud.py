@@ -3,11 +3,12 @@ from sqlalchemy import text
 from .database import SessionLocal
 from .schemas import TopProduct, ChannelActivity, PostingTrend
 
-
 def get_top_products(limit: int):
     sql = text(
         """
-        SELECT message_text AS product, COUNT(*) AS mentions
+        SELECT
+          COALESCE(message_text, '')     AS product,
+          COUNT(*)                       AS mentions
         FROM raw.messages
         GROUP BY 1
         ORDER BY mentions DESC
@@ -15,9 +16,8 @@ def get_top_products(limit: int):
         """
     )
     with SessionLocal() as session:
-        result = session.execute(sql, {"limit": limit}).all()
-        return [TopProduct(product=row[0], mentions=row[1]) for row in result]
-
+        rows = session.execute(sql, {"limit": limit}).all()
+    return [TopProduct(product=row[0], mentions=row[1]) for row in rows]
 
 def get_channel_activity(channel: str):
     sql = text(
